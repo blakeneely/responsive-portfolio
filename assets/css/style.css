@@ -40,7 +40,6 @@ body {
     padding: 30px;
     text-align: center;
     color: #ffffff;
-    border-bottom: #cccccc solid 2px;
 }
 
 .nav-links {
@@ -200,3 +199,41 @@ form button:hover, form button:focus {
     color: #4aaaa5;
     transition: background-color, color 1s ease-out;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 640px) {
+    /* Nav bar */
+    .nav-head {
+        max-width: 640px;
+        height: auto;
+    }
+    .name, .nav-links {
+        float: none;
+    }
+    .name {
+        width: 100%;
+        display: block;
+    }
+    .nav-links {
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+        padding: 1em;
+    }
+    ul {
+        text-align: center;
+    }
+    /* Main Container */
+     .container {
+         max-width: 400px;
+     }
+    /* About Image */
+    .me-img {
+        float: none;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+  }
