@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #777777;
+    margin: auto;
+    background-image: url("../images/dark_wood.png");
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: auto 1fr;
+}
+
+/* Nav bar styling*/
+
+.nav-head {
+    background-color: #ffffff;
+    height: 100px;
+    border-bottom: #cccccc solid 2px;
+}
+
+.header {
+    max-width: 960px;
+    margin: auto;
+}
+
+.name {
+    background-color: #4aaaa5;
+    height: 100px;
+    width: 35%;
+    float: left;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: #cccccc solid 2px;
+}
+
+.nav-links {
+    width: 65%;
+    float: left;
+    margin-top: 40px;
+    background-color: #ffffff;
+}
+
+ul {
+    list-style: none;
+    text-align: right;
+}
+
+li {
+    display: inline;
+
+}
+
+.footer {
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+    margin: 0;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/* Container styling */
+
+.container {
+    background-color: #ffffff;
+    width: 960px;
+    margin: 2em auto auto auto;
+    padding: 1.5em;
+}
+
+.me-img {
+    max-width: 200px;
+    height: auto;
+    padding-top: 1.5em;
+    margin-right: 1.5em;
+    float: left;
+}
+
+h1, h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.container h2 {
+    padding-bottom: 1em;
+    color: #4aaaa5;
+}
+
+.container hr {
+    border: 1.5px solid #dddddd;
+}
+
+P {
+    line-height: 1.5;
+    padding-top: 1em;
+}
+
+/* Navigation Links styling */
+
+a {
+    text-decoration: none;
+    padding: 1em;
+    margin-right: -1em;
+}
+
+a:link {
+    color: #777777;
+}
+
+a:visited {
+    color: #4882B8;
+}
+
+a:hover {
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+.about, .portfolio {
+    border-right: solid 1px #777777;
+    padding-right: 1em;
+}
+
+.portfolio, .contact {
+    margin-left: -.3em;
+}
+
+/* Portfolio Images */
+
+.portfolio-imgs {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+    z-index: -1;
+    margin: 1.5em;
+    padding-top: 9em;
+    float: left;
+}
+
+#img1 {
+    background-image: url("../../assets/images/ipad.jpeg");
+}
+
+.img2 {
+    background-image: url("../../assets/images/turntable.jpeg");
+}
+
+.img3 {
+    background-image: url("../../assets/images/computer.jpeg");
+}
+
+.img4 {
+    background-image: url("../../assets/images/earpods.jpeg");
+}
+
+.img5 {
+    background-image: url("../../assets/images/iphone.jpeg");
+}
+
+.portfolio-titles {
+    text-align: center;
+    padding: 1em;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+/* Contact Form */
+
+form input, form textarea {
+    width: 100%;
+    padding: .5em;
+    border: 1px solid #dddddd;
+    font-size: .8em;
+}
+
+form button {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 1.2em;
+    border: 0;
+    padding: .5em 1em;
+}
+
+form button:hover, form button:focus {
+    background-color: #666666;
+    color: #4aaaa5;
+    transition: background-color, color 1s ease-out;
+}
