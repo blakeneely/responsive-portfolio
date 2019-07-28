@@ -23,7 +23,7 @@ body {
 
 .nav-head {
     background-color: #ffffff;
-    height: 100px;
+    height: 100%;
     border-bottom: #cccccc solid 2px;
 }
 
@@ -34,10 +34,10 @@ body {
 
 .name {
     background-color: #4aaaa5;
-    height: 100px;
     width: 35%;
+    height: 100%;
     float: left;
-    padding: 30px;
+    padding: 0.75em;
     text-align: center;
     color: #ffffff;
 }
@@ -201,11 +201,79 @@ form button:hover, form button:focus {
 }
 
 /* Media Queries */
+@media screen and (max-width: 980px) {
+    /* Nav Bar */
+    .nav-head {
+        width: 100%;
+        height: auto;
+    }
+    .header {
+        max-width: 768px;
+    }
+    .name {
+        padding: 0.5em;
+        width: 40%;
+        height: 100%;
+    }
+    .nav-links {
+        width: 60%;
+    }
+    /* Main Container */
+    .container {
+        max-width: 768px;
+    }
+    /* Portfolio Images */
+    .portfolio-imgs {
+        width: 300px;
+        height: 100%;
+        margin: 1em;
+    }
+    .portfolio-titles {
+        margin-bottom: 15px;
+        padding: 0.75em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    /* Nav Bar */
+     .nav-head {
+         width: 100%;
+         height: auto;
+     }
+     .header {
+         max-width: 640px;
+     }
+     .name {
+         width: 45%;
+         height: 100%;
+         padding: 0.5em;
+     }
+     .nav-links {
+         width: 55%;
+     }
+     /* Main Container */
+     .container {
+         max-width: 640px;
+     }
+     /* Portfolio Images */
+     .portfolio-imgs {
+         width: 270px;
+         height: 100%;
+         margin: 0.5em;
+         margin-top: 1em;
+     }
+     .portfolio-titles {
+         margin-bottom: 15px;
+         padding: 0.75em;
+     }
+   }
+ 
 
 @media screen and (max-width: 640px) {
-    /* Nav bar */
+    /* Nav Bar */
     .nav-head {
-        max-width: 640px;
+        width: 100%;
         height: auto;
     }
     .name, .nav-links {
@@ -226,7 +294,7 @@ form button:hover, form button:focus {
     }
     /* Main Container */
      .container {
-         max-width: 400px;
+         max-width: 500px;
      }
     /* About Image */
     .me-img {
@@ -235,5 +303,13 @@ form button:hover, form button:focus {
         width: 100%;
         height: auto;
     }
-
+    /* Portfolio Images */
+    .portfolio-imgs {
+        width: 425px;
+        height: auto;
+    }
+    .portfolio-titles {
+        padding: 0.75em;
+    }
   }
+
