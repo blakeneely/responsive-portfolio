@@ -144,7 +144,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
+    height: 100%;
     width: 300px;
     z-index: -1;
     margin: 1.5em;
@@ -298,7 +298,7 @@ form button:hover, form button:focus {
     }
     /* Main Container */
      .container {
-         max-width: 500px;
+         width: 100%;
          margin-top: 2em;
      }
     /* About Image */
@@ -310,8 +310,9 @@ form button:hover, form button:focus {
     }
     /* Portfolio Images */
     .portfolio-imgs {
-        width: 425px;
-        height: auto;
+        max-width: 600px;
+        width: 100%;
+        height: 100%;
     }
     .portfolio-titles {
         padding: 0.75em;
