@@ -177,6 +177,7 @@ a:hover {
     padding: 1em;
     background-color: #4aaaa5;
     color: #ffffff;
+    margin-bottom: 15px;
 }
 
 /* Contact Form */
@@ -196,7 +197,7 @@ form button {
     padding: .5em 1em;
 }
 
-form button:hover, form button:focus {
+form button:hover, form button:focus, .portfolio-titles:hover, .portfolio-titles:focus {
     background-color: #666666;
     color: #4aaaa5;
     transition: background-color, color 1s ease-out;
