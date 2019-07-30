@@ -197,7 +197,7 @@ form button {
     padding: .5em 1em;
 }
 
-form button:hover, form button:focus, .portfolio-titles:hover, .portfolio-titles:focus {
+form button:hover, form button:focus, .portfolio-imgs:hover  .portfolio-titles, .portfolio-images:focus .portfolio-titles {
     background-color: #666666;
     color: #4aaaa5;
     transition: background-color, color 1s ease-out;
@@ -311,6 +311,8 @@ form button:hover, form button:focus, .portfolio-titles:hover, .portfolio-titles
     }
     /* Portfolio Images */
     .portfolio-imgs {
+        margin-left: 0;
+        margin-right: 0;
         max-width: 600px;
         width: 100%;
         height: 100%;
