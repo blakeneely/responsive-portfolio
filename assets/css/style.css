@@ -27,6 +27,7 @@ body {
     height: auto;
     border-bottom: #cccccc solid 2px;
     position: fixed;
+    z-index: 10;
 }
 
 .header {
@@ -109,21 +110,21 @@ P {
 
 /* Navigation Links styling */
 
-a {
+.nav-links a {
     text-decoration: none;
     padding: 1em;
     margin-right: -1em;
 }
 
-a:link {
+.nav-links a:link {
     color: #777777;
 }
 
-a:visited {
+.nav-links a:visited {
     color: #4882B8;
 }
 
-a:hover {
+.nav-links a:hover {
     background-color: #4aaaa5;
     color: #ffffff;
 }
@@ -138,9 +139,33 @@ a:hover {
 }
 
 /* Portfolio Images */
-
 .portfolio-imgs {
+    width: 300px;
+    height: 225px;
+    margin: 1.5em 1.5em 0 0;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
 
+.portfolio-imgs img {
+    width: 300px;
+    height: 250px;
+    float: left;
+}
+
+.portfolio-imgs h3 {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 100%;
+    padding: 0.5em;
+}
+
+
+/* .portfolio-imgs {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,7 +176,6 @@ a:hover {
     padding-top: 9em;
     float: left;
 }
-
 #img1 {
     background-image: url("../../assets/images/ipad.jpeg");
 }
@@ -170,15 +194,15 @@ a:hover {
 
 .img5 {
     background-image: url("../../assets/images/iphone.jpeg");
-}
+} */
 
-.portfolio-titles {
+/* .portfolio-titles {
     text-align: center;
     padding: 1em;
     background-color: #4aaaa5;
     color: #ffffff;
     margin-bottom: 15px;
-}
+} */
 
 /* Contact Form */
 
@@ -197,7 +221,7 @@ form button {
     padding: .5em 1em;
 }
 
-form button:hover, form button:focus, .portfolio-imgs:hover  .portfolio-titles, .portfolio-images:focus .portfolio-titles {
+form button:hover, form button:focus, .portfolio-imgs:hover h3, .portfolio-images:focus h3 {
     background-color: #666666;
     color: #4aaaa5;
     transition: background-color, color 1s ease-out;
@@ -311,11 +335,15 @@ form button:hover, form button:focus, .portfolio-imgs:hover  .portfolio-titles, 
     }
     /* Portfolio Images */
     .portfolio-imgs {
+        float: none;
         margin-left: 0;
         margin-right: 0;
-        max-width: 600px;
         width: 100%;
-        height: 100%;
+        height: auto;
+    }
+    .portfolio-imgs img {
+        width: 100%;
+        height: auto;
     }
     .portfolio-titles {
         padding: 0.75em;
